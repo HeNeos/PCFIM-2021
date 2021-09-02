@@ -57,7 +57,7 @@ a/b; // División (int) de a y b
 a%b; // Módulo (o residuo) de a en b
 ```
 
-#### Impriminedo valores
+#### Imprimiendo valores
 
 ```cpp
 cout << 2; //Imprime '2' 
@@ -171,6 +171,69 @@ int main(){
     long long a = 2147483647;
     a = a+1;
     cout << a << endl; // Imprime 2147483648
+    return 0;
+}
+```
+
+### Float y Double
+
+- Representan números (reales).
+- Uso de memoria: 4 y 8 bytes.
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    float a = 4.5;
+    a = a/2;
+    cout << a << endl; // Imprime 2.25
+    return 0;
+}
+```
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    double a = 4.5;
+    a = a/2;
+    cout << a << endl; // Imprime 2.25
+    return 0;
+}
+```
+
+### Char
+
+- Representa un caracter.
+- Uso de memoria: 1 byte.
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    char a = 'z';
+    cout << a-'x' << endl; // Imprime 2
+    return 0;
+}
+```
+
+### Bool
+
+- Representa a uno de dos posibles estados (1: true, 0: false).
+- Uso de memoria: 1 byte.
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    bool x = 2 > 6; //false
+    bool y = 6 <= 7; //true
+    bool z = 1 != 5; //true
+    cout << y && (x || z) << endl; // Imprime 1
     return 0;
 }
 ```
