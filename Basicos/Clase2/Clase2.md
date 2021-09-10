@@ -1,3 +1,5 @@
+![xd](https://i.ytimg.com/vi/47GRtdHOKMg/maxresdefault.jpg)
+
 Una forma de aproximar el tiempo que toma nuestro código en ejecutarse es contando la cantidad de operaciones *básicas* que realiza.
 
 Se consideran operaciones básicas:
@@ -40,6 +42,8 @@ $$
 $$
 
 Una forma más efectiva de medir esto, es con la complejidad asintótica del código.
+
+![xd](https://www.vegait.rs/media/4767/comparisonx2.png?width=350&height=350)
 
 # Complejidad asintótica
 
@@ -259,15 +263,19 @@ int main(){
 $$
 b + ka = d + pc
 $$
+
 $$
 ka = (d-b)+pc \qquad\qquad g = \gcd(a, d-b)
 $$
+
 $$
 k\frac{a}{g} = \frac{d-b}{g} + \frac{pc}{g}
 $$
+
 $$
 pc \equiv 0 \mod g
 $$
+
 $$
 p \equiv 0 \mod \frac{g}{\gcd (c, g)}
 $$
@@ -299,21 +307,27 @@ int main(){
 $$
 g = \gcd(a, d-b) \quad\quad x = \frac{a}{g} \quad\quad y = \frac{d-b}{g}
 $$
+
 $$
 G = \gcd(c, g) \quad\quad u = \frac{c}{G} \quad\quad v = \frac{g}{G}
 $$
+
 $$
 p \equiv 0 \mod v
 $$
+
 $$
 \frac{p}{v} u \equiv -y \mod x
 $$
+
 $$
 \frac{p}{v} \equiv \frac{-y}{\gcd(u, x)}\Bigg(\phi\left(\frac{u}{\gcd(u, x)}\right)\Bigg)^{-1} \mod x
 $$
+
 $$
 p = v\Bigg(\frac{-y}{\gcd(u, x)}\Bigg(\phi\left(\frac{u}{\gcd(u, x)}\right)\Bigg)^{-1} + xJ\Bigg)
 $$
+
 $$
 t = \min(pc + d) = \min(p)c + d
 $$
